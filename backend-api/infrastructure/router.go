@@ -5,6 +5,8 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+
+	"vue-golang-payment-app/backend-api/handler"
 )
 
 // Router - router api server
