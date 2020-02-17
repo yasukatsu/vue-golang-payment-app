@@ -20,10 +20,18 @@ module.exports = {
     'vue'
   ],
   // add your custom rules here
-  rules: {
-    // allow async-await
-    'generator-star-spacing': 'off',
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  'rules': {
+    // どうしても'=='が使いたいのに`eqeqeq`って言われたからそのルールを消したいとき////
+    'eqeqeq': 0,
+    // 0にしとくと、そのルールが無効になる。
+    'arrow-parens': 0,
+    'generator-star-spacing': 0,
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
+    "semi-spacing": ["error", {"after": true, "before": false}],
+    "semi-style": ["error", "first"],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error"
   }
 }

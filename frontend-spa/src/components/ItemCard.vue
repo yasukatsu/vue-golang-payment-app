@@ -1,17 +1,17 @@
 <template>
-    <div class="itemcard">
-        <h1>{{ item.Name }}</h1>
-        <h2>{{ item.Description }}</h2>
-        <h2>{{ item.Amout }}円</h2>
-    </div>
+  <div class="itemcard">
+    <h1>{{ item.Name }}</h1>
+    <h2>{{ item.Description }}</h2>
+    <h2>{{ item.Amount }}円</h2>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'ItemCard',
-    props: [
-        'item'
-    ]
+  name: 'ItemCard',
+  props: [
+    'item'
+  ]
 }
 </script>
 
@@ -36,6 +36,6 @@ button {
   padding: 10px;
 }
 .itemcard {
-    border: solid 1px gray;
+  border: solid 1px gray;
 }
 </style>
